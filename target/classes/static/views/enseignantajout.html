@@ -1,0 +1,27 @@
+ 
+ 
+
+         <h4>Ajouter Un Nouvel Enseignant</h1>
+          <form ng-controller="EnseignantAjout">
+                  N°Enseignant <input type="text" ng-model="noEnseignant" id="noEnseignant" required/></br>
+                  Nom  <input type="text" ng-model="nom" id="nom" required/></br>
+                  Prénom <input type="text" ng-model="prenom" id="prenom" required/></br>
+                  Adresse <input type="text" ng-model="adresse" id="adresse"/></br></br>
+                  Code Postale <input type="text" ng-model="codePostal" id="codePostal"/></br></br>
+                  Email Perso <input type="text" ng-model="emailPerso" id="emailPerso" required/></br>
+                  Email Ubo <input type="text" ng-model="emailUbo" id="emailUbo" required/></br>
+                  Mobile <input type="text" ng-model="mobile" id="mobile" required/></br>
+                  Pays  <input type="text" ng-model="pays" id="pays"/></br>
+                  Sexe <select ng-model="sexe"  size="1"></br>
+                  			<option value="H"> Homme </option>
+                  			<option value="F"> Femme </option>
+                  			
+                  			</select></br>
+                  Telephone <input type="text" ng-model="telephone" id="telephone" required/></br></br>
+                  Type<input type="text" ng-model="type" id="type" required/></br></br>
+                  Ville <input type="text" ng-model="ville" id="ville"/></br>
+                      <button type="submit" class="btn btn-success custom-width" ng-click="add()" >Ajouter</button> 
+                      <a  href = "#/enseignant"> 
+                      <button type="button" class="btn btn-danger custom-width">Annuler</button>  </a>                      
+                  </form>
+                  

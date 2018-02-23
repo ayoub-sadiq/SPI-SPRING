@@ -1,0 +1,24 @@
+ 
+ 
+ 
+ <form ng-controller="FormationUpdate" >
+         			<h4>Modifier Une formation</h1>
+                  Code Formation <input type="text" ng-model="codeFormationModif" ng-disabled="codeFormationModif"/></br>
+                  Nom Formation <input type="text" ng-model="nomFormationModif" id="nomFormationModif"/></br>
+                  N°Année <input type="text" ng-model="anneeFormationModif" id="anneeFormationModif"/></br>
+                  Diplome <select ng-model="diplomeModif" id="diplomeModif" size="1"></br>
+                  			<option value="L"> License </option>
+                  			<option value="M"> Master </option>
+                  			<option value="D"> Doctorat </option>
+                  			</select></br>
+                  Double Diplome <select ng-model="doublediplomeModif"  size="1"></br>
+                  			<option value="N"> Non </option>
+                  			<option value="O"> Oui </option>
+                  			
+                  			</select></br>
+                  Date Début Accréditation <input type="text" ng-model="datedebutModif" id="datedebut"/></br>
+                  Date Fin Accréditation <input type="text" ng-model="datefinModif" id="datefin"/></br>
+                      <button type="submit" class="btn btn-success custom-width" ng-click="saveEdit()" >Modifier</button> 
+                     <a  href = "#/formation">  <button type="button" class="btn btn-danger custom-width">Annuler</button>  </a>                       
+                                            
+                  </form>
